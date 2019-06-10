@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estil.css">
+</head>
+<body>
+    <div id="contenidor-xsocials">
+           <i class="far fa-envelope"></i>
+       
+       </div>
+   <div id="contenidor-general">
+       
+       <div class="contenidor-text">CURRICULUM</div>
+       <div class="contenidor-flex1">
+           <div class="item"><i class="fas fa-atlas"><a href="../index.html">Inici</a></i></div>
+           <div class="item"><i class="fas fa-align-center"><a href="curriculum.html">Curriculum</a></i></div>
+           <div class="item"><i class="fas fa-paint-brush"><a href="../Feines/Feines.html">Feines</a></i></div>
+           <div class="item"><i class="fas fa-paint-brush"><a href="../animacions/animacions.html">Animacions</a></i></div>
+       </div>
+       <div class="contenidor-curriculum">
+       <div class="dades-personals">
+           
+           <h2>Dades Personals</h2>
+           <p> <strong>Nom:</strong>Àlex Pernia Girbau</p>
+           <hr>
+           <p><strong>Adreça:</strong>c/estepa 3</p>
+           <hr>
+           <p><strong>Correu electrònic:</strong>alexperniagirbau3@gmail.com</p>
+       </div>
+     <div class="formacio-academica">
+         <h2>Formació acadèmica</h2>
+         <p> <strong>2018-actualitat:</strong>CFGS Animació 3D, Jocs i Entorns interactius. TEKNÓS. Centre de Formació en Tecnologia i comunicació UVIC i UVIC-UCC</p>
+         <hr>
+         <p><strong>2016-2017:</strong>Curs d'accés a cicle superior.Educem.Granollers</p>
+         <hr>
+         <p><strong>2010-2014:</strong>Esucació secundaria obligatoria.Ies la Vall del Tenes. Santa Eulalia de Ronçana</p>
+     </div>
+      
+      <div class="experiencia-laboral">
+      <h2>Experiència Laboral</h2>
+      <p> <strong>2015-2018:</strong>Apen centre informàtic</p>
+      </div>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+       <div id="footer"></div>
+   </div>
+</body>
+</html>

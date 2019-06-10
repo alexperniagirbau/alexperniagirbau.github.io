@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feines</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estil.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+   <div id="contenidor-general">
+ <div id="contenidor-xsocials">
+   <div id="contenidor-xsocials">
+           <i class="far fa-envelope"></i>
+       
+       </div>
+   
+       
+       <div class="contenidor-text">PORTFOLI</div>
+       <div class="contenidor-flex1">
+           <div class="item"><i class="fas fa-atlas"><a href="../index.html">Inici</a></i></div>
+           <div class="item"><i class="fas fa-align-center"><a href="../Curriculum/curriculum.html">Curriculum</a></i></div>
+           <div class="item"><i class="fas fa-paint-brush"><a href="Feines.html">Feines</a></i></div>
+            <div class="item"><i class="fas fa-paint-brush"><a href="../animacions/animacions.html">Animacions</a></i></div>
+       </div>
+        <div class="container-display">
+            
+           
+            <img class="mySlides" src="../imatges/radio.png" style="width:100%">
+            <img class="mySlides" src="../imatges/Stylesjuntitos.png" style="width:100%">
+            <img class="mySlides" src="../imatges/habitacio.PNG" style="width:100%">
+            <img class="mySlides" src="../imatges/Sakura.png" style="width:100%">
+            <img class="mySlides" src="../imatges/Walkingfarmer.gif" style="width:100%">
+            <img class="mySlides" src="../imatges/Skinsacabadas.jpg" style="width:100%">
+            <img class="mySlides" src="../imatges/estatua.PNG" style="width:100%">
+            <img class="mySlides" src="../imatges/fucsia.png" style="width:100%">
+
+
+            <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+         
+         
+       </div>div
+       
+       
+    </div>
+    
+
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+</body>
+</html>
